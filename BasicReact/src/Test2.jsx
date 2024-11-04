@@ -4,3 +4,5 @@ function Test2() {
     )
 }
 export default Test2
+
+//Exporting function is required

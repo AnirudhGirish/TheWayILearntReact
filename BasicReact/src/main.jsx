@@ -9,3 +9,5 @@ createRoot(document.getElementById('root')).render(
     <App />
   </>
 )
+
+// Only one element can be exported or rendered so we wrap everything into fragments
