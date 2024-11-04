@@ -1,10 +1,10 @@
-import Test from "./Test"
+import Test2 from "./Test2";
 function App() {
   return (
     <>
-    <Test/>
-    <h2>Basics React | React.js</h2>
+      <h2>Basics React | React.js</h2>
+      <Test2 />
     </>
-  )
+  );
 }
 export default App
