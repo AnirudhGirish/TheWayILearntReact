@@ -20,6 +20,7 @@ export class AuthService {
             }
         } catch (error) {
             console.log("Appwrite service :: createAccount :: error",error); 
+            alert(error)
             
         }
     }
