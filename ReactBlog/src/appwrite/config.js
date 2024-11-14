@@ -70,9 +70,12 @@ export class Service{
             return false
         }
     }
-    getFilePreview(fileID){
-        return this.bucket.getFilePreview(conf.appwriteBucketId,fileID)
-    }
+    getFilePreview(fileID) {
+        if (!fileID) {
+            return "https://images.pexels.com/photos/3843282/pexels-photo-3843282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+        }
+            return this.bucket.getFilePreview(conf.appwriteBucketId, fileID);
+        }
 }
 
 const service = new Service()
